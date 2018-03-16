@@ -10496,3 +10496,397 @@ no changes added to commit
 bash: d: command not found
 ]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git[Kt add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git pus[K[K[Kcommit -m "yikes [K...computer overheated and crashed [K..love[K[Kwering cores [K"
+[master 1b446f6] yikes...computer overheated and crashed..lowering cores
+ 5 files changed, 27 insertions(+), 9 deletions(-)
+ delete mode 100644 .Rproj.user/20B3FF0E/console06/987E607F
+ rewrite .Rproj.user/20B3FF0E/console06/INDEX001 (85%)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 1.26 KiB | 0 bytes/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   6962403..1b446f6  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push commit -m "yikes...computer overheated and crashed..lowering cores"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd SP[KD[KF-R
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd SF-Rgit push commit -m "yikes...computer overheated and crashed..lowering cores"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [K[5Pcd ..[1P[C[C[C[Cgit commit -m "yike, lower required cores, computerover heated and crashed"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [KRscript spam-filter.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcd SF-RRscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: e1071
+Error in confusionMatric(pred, d_test$y) : 
+  could not find function "confusionMatric"
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: e1071
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 121   8
+         1   1  69
+                                          
+               Accuracy : 0.9548          
+                 95% CI : (0.9159, 0.9791)
+    No Information Rate : 0.6131          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.903           
+ Mcnemar's Test P-Value : 0.0455          
+                                          
+            Sensitivity : 0.9918          
+            Specificity : 0.8961          
+         Pos Pred Value : 0.9380          
+         Neg Pred Value : 0.9857          
+             Prevalence : 0.6131          
+         Detection Rate : 0.6080          
+   Detection Prevalence : 0.6482          
+      Balanced Accuracy : 0.9440          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: e1071
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 117   9
+         1   4  69
+                                          
+               Accuracy : 0.9347          
+                 95% CI : (0.8909, 0.9648)
+    No Information Rate : 0.608           
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8614          
+ Mcnemar's Test P-Value : 0.2673          
+                                          
+            Sensitivity : 0.9669          
+            Specificity : 0.8846          
+         Pos Pred Value : 0.9286          
+         Neg Pred Value : 0.9452          
+             Prevalence : 0.6080          
+         Detection Rate : 0.5879          
+   Detection Prevalence : 0.6332          
+      Balanced Accuracy : 0.9258          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Warning message:
+In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘parellel’
+^[[A
+^[[A^[[A^[[A            ^C
+
+
+
+
+Warning message:
+In mclapply(argsList, FUN, mc.preschedule = preschedule, mc.set.seed = set.seed,  :
+  all scheduled cores encountered errors in user code
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 116   8
+         1   8  67
+                                          
+               Accuracy : 0.9196          
+                 95% CI : (0.8727, 0.9533)
+    No Information Rate : 0.6231          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8288          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9355          
+            Specificity : 0.8933          
+         Pos Pred Value : 0.9355          
+         Neg Pred Value : 0.8933          
+             Prevalence : 0.6231          
+         Detection Rate : 0.5829          
+   Detection Prevalence : 0.6231          
+      Balanced Accuracy : 0.9144          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: e1071
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 114   9
+         1   6  70
+                                          
+               Accuracy : 0.9246          
+                 95% CI : (0.8787, 0.9572)
+    No Information Rate : 0.603           
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8415          
+ Mcnemar's Test P-Value : 0.6056          
+                                          
+            Sensitivity : 0.9500          
+            Specificity : 0.8861          
+         Pos Pred Value : 0.9268          
+         Neg Pred Value : 0.9211          
+             Prevalence : 0.6030          
+         Detection Rate : 0.5729          
+   Detection Prevalence : 0.6181          
+      Balanced Accuracy : 0.9180          
+                                          
+       'Positive' Class : 0               
+                                          
+Error: unexpected symbol in:
+"  "What does this all mean?"
+} how"
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: e1071
+^C
+
+
+
+
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 115  10
+         1   6  68
+                                          
+               Accuracy : 0.9196          
+                 95% CI : (0.8727, 0.9533)
+    No Information Rate : 0.608           
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8298          
+ Mcnemar's Test P-Value : 0.4533          
+                                          
+            Sensitivity : 0.9504          
+            Specificity : 0.8718          
+         Pos Pred Value : 0.9200          
+         Neg Pred Value : 0.9189          
+             Prevalence : 0.6080          
+         Detection Rate : 0.5779          
+   Detection Prevalence : 0.6281          
+      Balanced Accuracy : 0.9111          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+[1] "If this prints, everything it good to go :>)"
+[1] "Loading now........"
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 112   9
+         1  10  68
+                                          
+               Accuracy : 0.9045          
+                 95% CI : (0.8549, 0.9415)
+    No Information Rate : 0.6131          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7992          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9180          
+            Specificity : 0.8831          
+         Pos Pred Value : 0.9256          
+         Neg Pred Value : 0.8718          
+             Prevalence : 0.6131          
+         Detection Rate : 0.5628          
+   Detection Prevalence : 0.6080          
+      Balanced Accuracy : 0.9006          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcd SF-Rgit push [2Pcd SF-RRscript spam-filter.R
+[1] "If this prints, everything it good to go :>)"
+[1] "Loading now........"
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 112   8
+         1   8  71
+                                          
+               Accuracy : 0.9196          
+                 95% CI : (0.8727, 0.9533)
+    No Information Rate : 0.603           
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8321          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9333          
+            Specificity : 0.8987          
+         Pos Pred Value : 0.9333          
+         Neg Pred Value : 0.8987          
+             Prevalence : 0.6030          
+         Detection Rate : 0.5628          
+   Detection Prevalence : 0.6030          
+      Balanced Accuracy : 0.9160          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+[1] If this prints, everything it good to go :>)
+[1] Loading now........
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 110  11
+         1  11  68
+                                          
+               Accuracy : 0.89            
+                 95% CI : (0.8382, 0.9298)
+    No Information Rate : 0.605           
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7699          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9091          
+            Specificity : 0.8608          
+         Pos Pred Value : 0.9091          
+         Neg Pred Value : 0.8608          
+             Prevalence : 0.6050          
+         Detection Rate : 0.5500          
+   Detection Prevalence : 0.6050          
+      Balanced Accuracy : 0.8849          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+[1] If you are getting packet messages, you can quiet them by setting quiet = TRUE in the require statement
+[1] If this prints, everything it good to go :>)
+[1] Loading now........
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 113  12
+         1   9  65
+                                          
+               Accuracy : 0.8945          
+                 95% CI : (0.8432, 0.9335)
+    No Information Rate : 0.6131          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.776           
+ Mcnemar's Test P-Value : 0.6625          
+                                          
+            Sensitivity : 0.9262          
+            Specificity : 0.8442          
+         Pos Pred Value : 0.9040          
+         Neg Pred Value : 0.8784          
+             Prevalence : 0.6131          
+         Detection Rate : 0.5678          
+   Detection Prevalence : 0.6281          
+      Balanced Accuracy : 0.8852          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+[1] If you are getting packet messages, you can quiet them by setting quiet = TRUE in the require statement
+[1] If this prints, everything it good to go :>)
+[1] Loading now........
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0 123   8
+         1   1  67
+                                          
+               Accuracy : 0.9548          
+                 95% CI : (0.9159, 0.9791)
+    No Information Rate : 0.6231          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9019          
+ Mcnemar's Test P-Value : 0.0455          
+                                          
+            Sensitivity : 0.9919          
+            Specificity : 0.8933          
+         Pos Pred Value : 0.9389          
+         Neg Pred Value : 0.9853          
+             Prevalence : 0.6231          
+         Detection Rate : 0.6181          
+   Detection Prevalence : 0.6583          
+      Balanced Accuracy : 0.9426          
+                                          
+       'Positive' Class : 0               
+                                          
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ GIT [K[K[K[Kgti[K[Kit add . 
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ git push [K[K[K[K[Kcommi [Kt -m "s[Kspma[K[K[K[Know just wokring of [K[Kn u[Kunderstanding [Ka [K[K and testing new csv files [K"
+[master ec298ea] now just wokring on understanding and testing new csv files
+ 1 file changed, 26 insertions(+), 14 deletions(-)
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ git push 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 786 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   1b446f6..ec298ea  master -> master
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ GTI [K[K[K[Kgit ad [Kd . 
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ git commit -m "ade[Kded resources [K!!!"
+git commit -m "added resourcesgit add . "
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   ../.Rproj.user/20B3FF0E/console06/189CEB49[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/console06/INDEX001[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/prop/20D10783[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/prop/A509DAA5[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/s-FF4689B2/3970DD1A[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/s-FF4689B2/3970DD1A-contents[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/s-FF4689B2/D63B1A00[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/s-FF4689B2/D63B1A00-contents[m
+	[31mmodified:   ../README.md[m
+
+no changes added to commit
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add .
