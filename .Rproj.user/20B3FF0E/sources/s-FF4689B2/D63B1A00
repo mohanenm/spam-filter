@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "D63B1A00",
-    "lastKnownWriteTime" : 1521212008,
-    "last_content_update" : 1521212223798,
+    "lastKnownWriteTime" : 1521212756,
+    "last_content_update" : 1521212833620,
     "path" : "~/Desktop/Desktop/spam-filter/SF-R/spam-filter.R",
     "project_path" : "SF-R/spam-filter.R",
     "properties" : {
-        "cursorPosition" : "24,31",
-        "scrollLine" : "5",
+        "cursorPosition" : "28,34",
+        "scrollLine" : "9",
         "tempName" : "Untitled1"
     },
     "relative_order" : 3,

@@ -8961,3 +8961,16 @@ remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3) 
 To https://github.com/mohanenm/spam-filter
    02652c8..c073df6  master -> master
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git p[Kcommit -m "added comments"
+[master 6f516ab] added comments
+ 4 files changed, 33 insertions(+), 10 deletions(-)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 1.61 KiB | 0 bytes/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   c073df6..6f516ab  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
