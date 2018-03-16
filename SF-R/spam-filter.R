@@ -62,12 +62,12 @@ svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7), row.names = NULL)
 if(FALSE){
   "lay description"
 }
-x <- train(y ~., data = d_train, method = "svmRadial", preProc = c("center","scale"),
+x <- train(y ~. , data = d_train, method = "svmRadial", preProc = c("center","scale"),
            tuneGrid = svmTuneGrid, trControl =
            trainControl(method = "repeatedcv, repeats = 5", 
                         classProbs = TRUE))
 
-preProc <- predict(x, d_test[,1:57])
-acc <- confusionMatric(predProc, d_test$y)
+pred <- predict(x, d_test[,1:57])
+acc <- confusionMatric(pred, d_test$y)
 
 print(acc)

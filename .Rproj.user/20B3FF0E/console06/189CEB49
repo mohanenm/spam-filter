@@ -10151,3 +10151,62 @@ Error: At least one of the class levels is not a valid R variable name; This wil
 Execution halted
 ]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit-m [K[K[K -m "problmes [K"[K[K[K[Kems"
+[master c2ff1b4] problems
+ 7 files changed, 699 insertions(+), 21 deletions(-)
+ create mode 100644 .Rproj.user/20B3FF0E/build_options
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git psuh [K[K[K[Kush 
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  62% (10/16)   Writing objects:  68% (11/16)   Writing objects:  75% (12/16)   Writing objects:  81% (13/16)   Writing objects:  87% (14/16)   Writing objects:  93% (15/16)   Writing objects: 100% (16/16)   Writing objects: 100% (16/16), 2.16 KiB | 0 bytes/s, done.
+Total 16 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/9)   [Kremote: Resolving deltas:  11% (1/9)   [Kremote: Resolving deltas:  22% (2/9)   [Kremote: Resolving deltas:  33% (3/9)   [Kremote: Resolving deltas:  44% (4/9)   [Kremote: Resolving deltas:  55% (5/9)   [Kremote: Resolving deltas:  66% (6/9)   [Kremote: Resolving deltas:  88% (8/9)   [Kremote: Resolving deltas: 100% (9/9)   [Kremote: Resolving deltas: 100% (9/9), completed with 8 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   d99f1d5..c2ff1b4  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Everything up-to-date
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push commit -m "problems"add . [K[5Pcd ..Rscript spam-filter.R
+Fatal error: cannot open file 'spam-filter.R': No such file or directory
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ cd s[KSF-R
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd SF-RRscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: At least one of the class levels is not a valid R variable name; This will cause errors when class probabilities are generated because the variables names will be converted to  X0, X1 . Please use factor levels that can be used as valid R variable names  (see ?make.names for help).
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R[K[K[K[K[K[K[K[K[K[K[K[K[KTEST.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Warning message:
+In data.frame(.sigma = sigDist[1], .C = 2^(-2:7)) :
+  row names were found from a short variable and have been discarded
+Error: At least one of the class levels is not a valid R variable name; This will cause errors when class probabilities are generated because the variables names will be converted to  X0, X1 . Please use factor levels that can be used as valid R variable names  (see ?make.names for help).
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
