@@ -10,3 +10,35 @@ Initialized empty Git repository in /Users/ethan/Desktop/Desktop/spam-filter/.gi
 origin	https://github.com/mohanenm/spam-filter (fetch)
 origin	https://github.com/mohanenm/spam-filter (push)
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit -m "first commit[Kt"
+[master (root-commit) 5deb33b] first commit
+ 6 files changed, 105 insertions(+)
+ create mode 100644 .Rproj.user/20B3FF0E/console06/189CEB49
+ create mode 100644 .Rproj.user/20B3FF0E/console06/189CEB49.env
+ create mode 100644 .Rproj.user/20B3FF0E/console06/INDEX001
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 spam-filter.Rproj
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ g[Kgit pus[K[K[Kpush pro[K[K[Kor[K[K[K set origin-master
+error: src refspec origin-master does not match any.
+error: failed to push some refs to 'set'
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$   git push --set-upstream origin master
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 2.75 KiB | 0 bytes/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/mohanenm/spam-filter
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ [Kxxxxxx:spam-filter ethan$ [Kxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git c[Kcommit -m "added nex"\
+> "
+> "
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git ad [Kd .

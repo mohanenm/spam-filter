@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521160409113.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "11FCDD65",
+    "lastKnownWriteTime" : 1521160463,
+    "last_content_update" : 1521160463365,
+    "path" : "~/Desktop/Desktop/spam-filter/SF-interactive.Rmd",
+    "project_path" : "SF-interactive.Rmd",
+    "properties" : {
+        "cursorPosition" : "22,0",
+        "scrollLine" : "12",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

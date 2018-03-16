@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521160559061.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "295755011",
+    "id" : "D63B1A00",
+    "lastKnownWriteTime" : 1521160618,
+    "last_content_update" : 1521160618607,
+    "path" : "~/Desktop/Desktop/spam-filter/SF-R/spam-filter.R",
+    "project_path" : "SF-R/spam-filter.R",
+    "properties" : {
+        "cursorPosition" : "0,16",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
