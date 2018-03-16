@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521210763106.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5514922B",
+    "lastKnownWriteTime" : 1521161041,
+    "last_content_update" : 1521161041,
+    "path" : "~/Desktop/Desktop/spam-filter/data/data.csv",
+    "project_path" : "data/data.csv",
+    "properties" : {
+        "cursorPosition" : "6,158",
+        "scrollLine" : "1",
+        "source_window_id" : ""
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
