@@ -3,9 +3,12 @@
 if(FALSE){
   "READ DATA INTO VARIABLE, 'EMAIL DATA', NO HEADER, SEPERATION IS DONE AT SEMI COLON"
 }
-
 email_data <- read.csv("data.csv", header=FALSE,sep=";")
+
+# read in attribute names so that support vector model can actually work
 name_data <-read.csx("names.csv", header=FALSE, seop=";")
 
 # print(email_data)
-print(name_data)
+# print(name_data)
+# Actually applying names to our read in data
+names_data(email_data) <-sapply((1:nrow(names_data)), function(i) toString(names_data[i,1]))
