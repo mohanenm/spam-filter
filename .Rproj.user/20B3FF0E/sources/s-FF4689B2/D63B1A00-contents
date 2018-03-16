@@ -52,3 +52,19 @@ if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATI
   separable.
   "
 }
+sigDist <- sigest(y ~., email_data = d_train, frac =1 )
+svmTuneGrid <- email_data.frame(.sigma = sigDist[1], .C = 2^(-2:7))
+
+# Actual Training  = > article has good description, but I will add an even more lay description soon
+if(FALSE){
+  
+}
+x <- train(y ~ ., email_data = d_train, method = "svmRadial", preProc = c("center","scale"),
+           tuneGrid = svmTuneGrid, trControl =
+           trainControl(method = "repeatedcv, repeats = 5", 
+                        classProbs = TRUE))
+
+pre <- predict(x, d_test[,1:57])
+acc <- confusionMatric(pred, d_test$y)
+
+print(acc)

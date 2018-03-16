@@ -34,18 +34,37 @@ registerDoMC(cores=4) # macbook air, 4 cores
 # finding the right tunning params for SVM is done by using the sigest function from kernlab
 # SVM needs sigma and c parameters
 if(FALSE){
-  "FROM 'A PRACTICAL GUIDE TO SVM CLASSIFICATION' ==> https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
+  "
+  FROM 'A PRACTICAL GUIDE TO SVM CLASSIFICATION' ==> https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
   'We recommend a grid-search on C and γ using cross-validation. Various pairs of (C,γ) values are tried and the 
   one with the best cross-validation accuracy is picked. We found that trying exponentially growing sequences of
-C and γ is a practical method to identify good parameters (for example, C=2−5,2−3,…,215;γ=2−15,2−13,…,23)"
+  C and γ is a practical method to identify good parameters (for example, C=2−5,2−3,…,215;γ=2−15,2−13,…,23)
+  "
 }
-if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATION THEN THE PREVIOUS ONE"
-  "If you want to know what these parameters are exactly you can take a look at:
+if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATION THEN THE PREVIOUS ONE:"
+  "
   http://feature-space.com/en/post65.html and http://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
   The C parameter tells the SVM optimization how much you want to avoid misclassifying each training example. 
   For large values of C, the optimization will choose a smaller-margin hyperplane if that hyperplane does a better
   job of getting all the training points classified correctly. Conversely, a very small value of C will cause the 
   optimizer to look for a larger-margin separating hyperplane, even if that hyperplane misclassifies more points. 
   For very tiny values of C, you should get misclassified examples, often even if your training data is linearly 
-  separable."
+  separable.
+  "
 }
+sigDist <- sigest(y ~., email_data = d_train, frac =1 )
+svmTuneGrid <- email_data.frame(.sigma = sigDist[1], .C = 2^(-2:7))
+
+# Actual Training  = > article has good description, but I will add an even more lay description soon
+if(FALSE){
+  
+}
+x <- train(y ~ ., email_data = d_train, method = "svmRadial", preProc = c("center","scale"),
+           tuneGrid = svmTuneGrid, trControl =
+           trainControl(method = "repeatedcv, repeats = 5", 
+                        classProbs = TRUE))
+
+pre <- predict(x, d_test[,1:57])
+acc <- confusionMatric(pred, d_test$y)
+
+print(acc)
