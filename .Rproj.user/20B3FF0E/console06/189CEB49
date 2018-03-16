@@ -72,3 +72,42 @@ remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3) 
 To https://github.com/mohanenm/spam-filter
    5deb33b..4b77efc  master -> master
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit -m "added .py"
+[master a2bb4c0] added .py
+ 9 files changed, 60 insertions(+), 4 deletions(-)
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/F1D3B170
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/F3D5AE24
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/F3D5AE24-contents
+ create mode 100644 SF-py/spam-filter.py
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 18, done.
+Delta compression using up to 4 threads.
+Compressing objects:   6% (1/15)   Compressing objects:  13% (2/15)   Compressing objects:  20% (3/15)   Compressing objects:  26% (4/15)   Compressing objects:  33% (5/15)   Compressing objects:  40% (6/15)   Compressing objects:  46% (7/15)   Compressing objects:  53% (8/15)   Compressing objects:  60% (9/15)   Compressing objects:  66% (10/15)   Compressing objects:  73% (11/15)   Compressing objects:  80% (12/15)   Compressing objects:  86% (13/15)   Compressing objects:  93% (14/15)   Compressing objects: 100% (15/15)   Compressing objects: 100% (15/15), done.
+Writing objects:   5% (1/18)   Writing objects:  11% (2/18)   Writing objects:  16% (3/18)   Writing objects:  22% (4/18)   Writing objects:  27% (5/18)   Writing objects:  33% (6/18)   Writing objects:  38% (7/18)   Writing objects:  44% (8/18)   Writing objects:  50% (9/18)   Writing objects:  55% (10/18)   Writing objects:  61% (11/18)   Writing objects:  66% (12/18)   Writing objects:  72% (13/18)   Writing objects:  77% (14/18)   Writing objects:  83% (15/18)   Writing objects:  88% (16/18)   Writing objects:  94% (17/18)   Writing objects: 100% (18/18)   Writing objects: 100% (18/18), 3.12 KiB | 0 bytes/s, done.
+Total 18 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 5 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   4b77efc..a2bb4c0  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ gti add. [K[K[Kd .
+bash: gti: command not found
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit 0[K-m "adde data[K[K[K[K[Kd data"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/20B3FF0E/console06/189CEB49[m
+	[31mmodified:   .Rproj.user/20B3FF0E/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+Untracked files:
+	[31m.Rproj.user/20B3FF0E/sources/prop/3DEEEB8[m
+	[31m.Rproj.user/20B3FF0E/sources/prop/DB641490[m
+	[31m.Rproj.user/20B3FF0E/sources/s-FF4689B2/2D878CFB[m
+	[31m.Rproj.user/20B3FF0E/sources/s-FF4689B2/2D878CFB-contents[m
+	[31m.Rproj.user/20B3FF0E/sources/s-FF4689B2/3F26411A-contents[m
+	[31mdata/[m
+
+no changes added to commit
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ g[Kls 
+README.md		SF-interactive.Rmd	data
+SF-R			SF-py			spam-filter.Rproj
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
