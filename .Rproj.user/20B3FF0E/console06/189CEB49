@@ -1,0 +1,12 @@
+bash: /Users/ethan/.rvm/scripts
+
+/rvm: No such file or directory
+]0;~/Desktop/Desktop/spam-filter[?1034hxxxxxx:spam-filter ethan$ gi[K[Kgti [K[K[Kit add [K remote [K[K[K[K[K[K[K[K[K[K[Kremote add origin https://github.com/mohanenm/spam-filter
+fatal: remote origin already exists.
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ giti[K init 
+Initialized empty Git repository in /Users/ethan/Desktop/Desktop/spam-filter/.git/
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git [K[K[K[Kgit init remote add origin https://github.com/mohanenm/spam-filter
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git remot e[K[Ke -v
+origin	https://github.com/mohanenm/spam-filter (fetch)
+origin	https://github.com/mohanenm/spam-filter (push)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
