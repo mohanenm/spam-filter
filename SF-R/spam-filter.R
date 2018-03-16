@@ -1,5 +1,13 @@
 # SPAM -- FILTER
 
+
+# Supress masking messages
+library(ggplot2)
+library(kernlab, warn.conflicts = FALSE)
+suppressWarnings(suppressMessages(library(kernlab)))
+suppressWarnings(suppressMessages(library(ggplot2)))
+suppressWarnings(suppressMessages(library(caret)))
+
 if(FALSE){
   "READ DATA INTO VARIABLE, 'EMAIL DATA', NO HEADER, SEPERATION IS DONE AT SEMI COLON"
 }
@@ -18,21 +26,16 @@ email_data$y <- as.factor(rep(email_data$y))
 thousand_sample <- email_data[sample(nrow(email_data), 1000),]
 # Adding packages so the SVM can actually be created
 # allows actual SVM to be used
-require(caret)
+require(caret, quiet=TRUE)# requiring, quieting packages 
 #kernal based machine learning lab; adds methods for classification; deeper than caret package
-require(kernlab)
-require(doMC)
-
+require(kernlab, quiet=TRUE)# requiring, quieting packages 
+require(doMC, quiet=TRUE)# requiring, quieting packages 
 if(FALSE){
   "ALSO INSTALL: install.packages('e1071', dependencies=TRUE), CARET WILL NOT FUNCTION CORRECTLY WITHOUT IT"
 }
-require(e1071)
-# Supress masking messages
-library(ggplot2)
-library(kernlab, warn.conflicts = FALSE)
-suppressMessages(library(ggplot2))
-suppressMessages(library(kernlab))
-suppressMessages(library(caret))
+require(e1071, quiet=TRUE)# requiring, quieting packages 
+P_message <- ("If you are getting packet messages, you can quiet them by setting quiet = TRUE in the require statement")
+print(noquote(P_message))
 # splliting test and train data; which rows will be for training and which rows will be for testing; 
 # keeps zero and one in both training and testing to guarantee homogenous training
 # levels <- unique(email_data$y)
@@ -65,6 +68,11 @@ if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATI
   separable.
   "
 }
+
+message <- ("If this prints, everything it good to go :>)")
+print(noquote(message)) # self explanatory
+matrix_message <- ("Loading now........")
+print(noquote(matrix_message)) # self exaplanatory
 sigDist <- sigest(y ~ ., data = d_train, frac = 1)
 svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7), row.names = NULL)
 
@@ -73,9 +81,13 @@ if(FALSE){
   "lay description"
 }
 x <- train(y ~. , data = d_train, method = "svmRadial", preProc = c("center","scale"),
-           tuneGrid = svmTuneGrid, trControl =  trainControl(method = "repeatedcv", "repeats = 5", 
+           tuneGrid = svmTuneGrid, trControl =  trainControl(method = "repeatedcv", repeats = 5, 
                         classProbs = FALSE))
 
 pred <- predict(x, d_test[,1:57])
-acc <- confusionMatric(pred, d_test$y)
+acc <- confusionMatrix(pred, d_test$y)
 print(acc)
+
+# interpreting this result and how to apply it == > "What does this all mean?"
+if(FALSE){
+}
