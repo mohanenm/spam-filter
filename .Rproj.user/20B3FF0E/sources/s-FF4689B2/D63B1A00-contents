@@ -30,4 +30,12 @@ d_train <- thousand_sample[ train, ]
 d_test <- thousand_sample[-train, ]
 # domc
 # use all possible cores, very, very, very cool(increase SVM)
-registerDoMC(cores=4)
+registerDoMC(cores=4) # macbook air, 4 cores
+# finding the right tunning params for SVM is done by using the sigest function from kernlab
+# SVM needs sigma and c parameters
+if(FALSE){
+  "FROM 'A PRACTICAL GUIDE TO SVM CLASSIFICATION' ==> https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
+  'We recommend a grid-search on C and γ using cross-validation. Various pairs of (C,γ) values are tried and the 
+  one with the best cross-validation accuracy is picked. We found that trying exponentially growing sequences of
+C and γ is a practical method to identify good parameters (for example, C=2−5,2−3,…,215;γ=2−15,2−13,…,23)"
+}
