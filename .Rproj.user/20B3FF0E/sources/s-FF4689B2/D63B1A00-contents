@@ -16,7 +16,10 @@ names(email_data) <- sapply((1:nrow(names_data)), function(i) toString(names_dat
 email_data$y <- as.factor(email_data$y)
 #splliting data into a sample, to put lower load on SVM
 sample <- email_data[sample(nrow(email_data), 1000),]
-# Adding caret package so the SVM can actually be created
+# Adding packages so the SVM can actually be created
+# allows actual SVM to be used
 require(caret)
+#kernal based machine learning lab; adds methods for classification; deeper than caret package
 require(kernlab)
 require(doMC)
+# splliting test and train data
