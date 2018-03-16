@@ -25,5 +25,9 @@ require(doMC)
 # splliting test and train data; which rows will be for training and which rows will be for testing; 
 # keeps zero and one in both training and testing to guarantee homogenous training
 train <- creatDataPartition(thousand_sample$y, p=.85, list = FALSE, times = 1)
+# finally (actual split)
 d_train <- thousand_sample[ train, ]
 d_test <- thousand_sample[-train, ]
+# domc
+# use all possible cores, very, very, very cool(increase SVM)
+registerDoMC(cores=4)
