@@ -10474,3 +10474,25 @@ Loading required package: foreach
 Loading required package: iterators
 Loading required package: parallel
 Loading required package: e1071
+^C
+
+
+
+
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ git add  [K. 
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ gi c[K[Kt commit -m "yike [K, putting [K[K[K[K[K[K[K[Klower required cores [K, computer crash [Ked[K[K[K[K[K[K[K[Kover heated and crashed [K"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+	[31mmodified:   ../.Rproj.user/20B3FF0E/console06/189CEB49[m
+	[31mdeleted:    ../.Rproj.user/20B3FF0E/console06/987E607F[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/console06/INDEX001[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/prop/A509DAA5[m
+	[31mmodified:   ../.Rproj.user/20B3FF0E/sources/s-FF4689B2/D63B1A00[m
+
+no changes added to commit
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ d ..
+bash: d: command not found
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git[Kt add . 
