@@ -8856,3 +8856,61 @@ remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7) 
 To https://github.com/mohanenm/spam-filter
    9896ce1..5681c1f  master -> master
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git p[Kcommit -m "sample [K[K[K[K[K[K[Kreduce email data [K to smaller sample"
+[master 926e4b6] reduce email data to smaller sample
+ 4 files changed, 22 insertions(+), 5 deletions(-)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 1.39 KiB | 0 bytes/s, done.
+Total 12 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   5681c1f..926e4b6  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ ;s[K[Kls
+README.md		SF-interactive.Rmd	data
+SF-R			SF-py			spam-filter.Rproj
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ cd SF-R
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ LS 
+data.csv	names.csv	spam-filter.R
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscrp[Kipt spam-filter [K.R
+Error in read.csx("names.csv", header = FALSE, seop = ";") : 
+  could not find function "read.csx"
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  unused argument (seop = ";")
+Calls: read.csv
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Error in nrow(names_data) : object 'names_data' not found
+Calls: sapply -> lapply -> nrow
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Error in names_data(email_data) <- sapply((1:nrow(names_data)), function(i) toString(names_data[i,  : 
+  could not find function "names_data<-"
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Error in contrib.url(repos, "source") : 
+  trying to use CRAN without setting a mirror
+Calls: install.packages -> contrib.url
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLS [KRscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add.[K . 
