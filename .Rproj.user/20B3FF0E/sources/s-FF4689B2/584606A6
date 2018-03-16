@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4067539799",
+    "hash" : "0",
     "id" : "584606A6",
     "lastKnownWriteTime" : 1521211010,
     "last_content_update" : 1521211010157,
     "path" : "~/Desktop/Desktop/spam-filter/SF-R/names.csv",
     "project_path" : "SF-R/names.csv",
     "properties" : {
+        "cursorPosition" : "1,17",
+        "scrollLine" : "0"
     },
     "relative_order" : 6,
     "source_on_save" : false,
