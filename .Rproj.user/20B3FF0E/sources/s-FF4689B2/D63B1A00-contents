@@ -22,11 +22,21 @@ require(caret)
 #kernal based machine learning lab; adds methods for classification; deeper than caret package
 require(kernlab)
 require(doMC)
+
+if(FALSE){
+  "ALSO INSTALL: install.packages('e1071', dependencies=TRUE), CARET WILL NOT FUNCTION CORRECTLY WITHOUT IT"
+}
+require(e1071)
 # Supress masking messages
 library(ggplot2)
 library(kernlab, warn.conflicts = FALSE)
+suppressMessages(library(ggplot2))
+suppressMessages(library(kernlab))
+suppressMessages(library(caret))
 # splliting test and train data; which rows will be for training and which rows will be for testing; 
 # keeps zero and one in both training and testing to guarantee homogenous training
+# levels <- unique(email_data$y)
+# email_data$y <- factor(email_data$y, labels=make.names(levels))
 train <- createDataPartition(thousand_sample$y, p =.8, list = FALSE, times = 1)
 # finally (actual split)
 d_train <- thousand_sample[ train, ]
@@ -63,11 +73,14 @@ if(FALSE){
   "lay description"
 }
 x <- train(y ~. , data = d_train, method = "svmRadial", preProc = c("center","scale"),
-           tuneGrid = svmTuneGrid, trControl =
-           trainControl(method = "repeatedcv, repeats = 5", 
-                        classProbs = TRUE))
+           tuneGrid = svmTuneGrid, trControl =  trainControl(method = "repeatedcv", "repeats = 5", 
+                        classProbs = FALSE))
 
 pred <- predict(x, d_test[,1:57])
 acc <- confusionMatric(pred, d_test$y)
-
 print(acc)
+
+# interpreting this result and how to apply it == >
+if(FALSE){
+  "What does this all mean?"
+}

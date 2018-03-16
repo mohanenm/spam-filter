@@ -10210,3 +10210,267 @@ Error: At least one of the class levels is not a valid R variable name; This wil
 Execution halted
 ]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd ..
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git o[Kcommit -m "differecnes in tutourial and updated version of r [K - fixing now [K"
+[master 52a483d] differecnes in tutourial and updated version of r - fixing now
+ 9 files changed, 138 insertions(+), 10 deletions(-)
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/A536CED1
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/D9786120-contents
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects:   5% (1/18)   Compressing objects:  11% (2/18)   Compressing objects:  16% (3/18)   Compressing objects:  22% (4/18)   Compressing objects:  27% (5/18)   Compressing objects:  33% (6/18)   Compressing objects:  38% (7/18)   Compressing objects:  44% (8/18)   Compressing objects:  50% (9/18)   Compressing objects:  55% (10/18)   Compressing objects:  61% (11/18)   Compressing objects:  66% (12/18)   Compressing objects:  72% (13/18)   Compressing objects:  77% (14/18)   Compressing objects:  83% (15/18)   Compressing objects:  88% (16/18)   Compressing objects:  94% (17/18)   Compressing objects: 100% (18/18)   Compressing objects: 100% (18/18), done.
+Writing objects:   5% (1/19)   Writing objects:  10% (2/19)   Writing objects:  15% (3/19)   Writing objects:  21% (4/19)   Writing objects:  26% (5/19)   Writing objects:  31% (6/19)   Writing objects:  36% (7/19)   Writing objects:  42% (8/19)   Writing objects:  47% (9/19)   Writing objects:  52% (10/19)   Writing objects:  57% (11/19)   Writing objects:  63% (12/19)   Writing objects:  68% (13/19)   Writing objects:  73% (14/19)   Writing objects:  78% (15/19)   Writing objects:  84% (16/19)   Writing objects:  89% (17/19)   Writing objects:  94% (18/19)   Writing objects: 100% (19/19)   Writing objects: 100% (19/19), 2.68 KiB | 0 bytes/s, done.
+Total 19 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/10)   [Kremote: Resolving deltas:  10% (1/10)   [Kremote: Resolving deltas:  20% (2/10)   [Kremote: Resolving deltas:  30% (3/10)   [Kremote: Resolving deltas:  40% (4/10)   [Kremote: Resolving deltas:  50% (5/10)   [Kremote: Resolving deltas:  60% (6/10)   [Kremote: Resolving deltas:  70% (7/10)   [Kremote: Resolving deltas:  80% (8/10)   [Kremote: Resolving deltas:  90% (9/10)   [Kremote: Resolving deltas: 100% (10/10)   [Kremote: Resolving deltas: 100% (10/10), completed with 10 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   c2ff1b4..52a483d  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+^[[A    Everything up-to-date
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ CD [K[K[KLS 
+README.md		SF-interactive.Rmd	data
+SF-R			SF-py			spam-filter.Rproj
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ CD sf-r
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ ls 
+README.md		SF-interactive.Rmd	data
+SF-R			SF-py			spam-filter.Rproj
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ r[Kls CD sf-r[4PLS [6@git push[Ccommit -m "differecnes in tutourial and updated version of r - fixing now"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . [K[5Pcd ..Rscript TEST.Rspam-filter.R[14Pcd SF-RRscript spam-filter.R
+Fatal error: cannot open file 'spam-filter.R': No such file or directory
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ Rscript spam-filter.R[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd SF-R
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ cd SF-RRscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error in unique(dataset$y) : object 'dataset' not found
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error in email_datat$y <- factor(email_data$y, labels = make.names(levels)) : 
+  object 'email_datat' not found
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: At least one of the class levels is not a valid R variable name; This will cause errors when class probabilities are generated because the variables names will be converted to  X0, X1 . Please use factor levels that can be used as valid R variable names  (see ?make.names for help).
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: At least one of the class levels is not a valid R variable name; This will cause errors when class probabilities are generated because the variables names will be converted to  X0, X1 . Please use factor levels that can be used as valid R variable names  (see ?make.names for help).
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: Not a recognized resampling method.
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Error: package e1071 is required
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: e1071
+Warning message:
+In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘e1071’
+Error: package e1071 is required
+Execution halted
+]0;~/Desktop/Desktop/spam-filter/SF-Rxxxxxx:SF-R ethan$ Rscript spam-filter.R
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: kernlab
+
+Attaching package: ‘kernlab’
+
+The following object is masked from ‘package:ggplot2’:
+
+    alpha
+
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: e1071
