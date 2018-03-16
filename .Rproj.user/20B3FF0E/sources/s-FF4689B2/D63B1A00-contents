@@ -13,3 +13,7 @@ name_data <-read.csx("names.csv", header=FALSE, seop=";")
 # Actually applying names to our read in data
 names_data(email_data) <-sapply((1:nrow(names_data)), function(i) toString(names_data[i,1]))
 # Changing y column to factor values, allows SVM classfication output
+email_data$y <- as.factor(email_data$y)
+#splliting data into a sample, to put lower load on SVM
+sample <- email_data[sample(nrow(email_data), 1000),]
+# Adding caret package so the SVM can actually be created
