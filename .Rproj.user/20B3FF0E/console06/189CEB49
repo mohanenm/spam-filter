@@ -42,3 +42,33 @@ Branch master set up to track remote branch master from origin.
 > "
 > "
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git ad [Kd .
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit -m "added nes"
+[master 4b77efc] added nes
+ 19 files changed, 214 insertions(+), 2 deletions(-)
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/20D10783
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/63F27B6C
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/A509DAA5
+ create mode 100644 .Rproj.user/20B3FF0E/sources/prop/INDEX
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/11FCDD65
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/11FCDD65-contents
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/3970DD1A
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/3970DD1A-contents
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/A2AECB8F-contents
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/D63B1A00
+ create mode 100644 .Rproj.user/20B3FF0E/sources/s-FF4689B2/D63B1A00-contents
+ create mode 100644 .Rproj.user/shared/notebooks/B516610D-SF-interactive/1/20B3FF0EFF4689B2/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/B516610D-SF-interactive/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 README.md
+ create mode 100644 SF-R/spam-filter.R
+ create mode 100644 SF-interactive.Rmd
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 28, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
+Writing objects:   3% (1/28)   Writing objects:   7% (2/28)   Writing objects:  10% (3/28)   Writing objects:  14% (4/28)   Writing objects:  17% (5/28)   Writing objects:  21% (6/28)   Writing objects:  25% (7/28)   Writing objects:  28% (8/28)   Writing objects:  32% (9/28)   Writing objects:  35% (10/28)   Writing objects:  39% (11/28)   Writing objects:  42% (12/28)   Writing objects:  46% (13/28)   Writing objects:  50% (14/28)   Writing objects:  57% (16/28)   Writing objects:  60% (17/28)   Writing objects:  64% (18/28)   Writing objects:  67% (19/28)   Writing objects:  71% (20/28)   Writing objects:  75% (21/28)   Writing objects:  78% (22/28)   Writing objects:  82% (23/28)   Writing objects:  85% (24/28)   Writing objects:  89% (25/28)   Writing objects:  92% (26/28)   Writing objects:  96% (27/28)   Writing objects: 100% (28/28)   Writing objects: 100% (28/28), 4.01 KiB | 0 bytes/s, done.
+Total 28 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 1 local object.[K
+To https://github.com/mohanenm/spam-filter
+   5deb33b..4b77efc  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
