@@ -24,7 +24,7 @@ require(kernlab)
 require(doMC)
 # splliting test and train data; which rows will be for training and which rows will be for testing; 
 # keeps zero and one in both training and testing to guarantee homogenous training
-train <- creatDataPartition(thousand_sample$y, p=.85, list = FALSE, times = 1)
+train <- createDataPartition(thousand_sample$y, p=.8, list = FALSE, times = 1)
 # finally (actual split)
 d_train <- thousand_sample[ train, ]
 d_test <- thousand_sample[-train, ]
@@ -52,19 +52,19 @@ if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATI
   separable.
   "
 }
-sigDist <- sigest(y ~., email_data = d_train, frac =1 )
-svmTuneGrid <- email_data.frame(.sigma = sigDist[1], .C = 2^(-2:7))
+sigDist <- sigest(y ~ ., data = d_train, frac = 1)
+svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7))
 
 # Actual Training  = > article has good description, but I will add an even more lay description soon
 if(FALSE){
-  
+  "lay description"
 }
-x <- train(y ~ ., email_data = d_train, method = "svmRadial", preProc = c("center","scale"),
+x <- train(y ~., data = d_train, method = "svmRadial", preProc = c("center","scale"),
            tuneGrid = svmTuneGrid, trControl =
            trainControl(method = "repeatedcv, repeats = 5", 
                         classProbs = TRUE))
 
-pre <- predict(x, d_test[,1:57])
-acc <- confusionMatric(pred, d_test$y)
+preProc <- predict(x, d_test[,1:57])
+acc <- confusionMatric(predProc, d_test$y)
 
 print(acc)
