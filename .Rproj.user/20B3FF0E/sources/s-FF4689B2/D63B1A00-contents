@@ -6,14 +6,14 @@ if(FALSE){
 email_data <- read.csv("data.csv", header=FALSE,sep=";")
 
 # read in attribute names so that support vector model can actually work
-names_data <-read.csv("names.csv", header=FALSE, sep=";")
+names_att <-read.csv("names.csv", header=FALSE, sep=";")
 
 # print(email_data)
 # print(name_data)
 # Actually applying names to our read in data
-names(email_data) <- sapply((1:nrow(names_data)), function(i) toString(names_data[i,1]))
+names(email_data) <- sapply((1:nrow(names_att)), function(i) toString(names_att[i,1]))
 # Changing y column to factor values, allows SVM classfication output
-email_data$y <- as.factor(email_data$y)
+email_data$y <- as.factor(rep(email_data$y))
 #splliting data into a sample, to put lower load on SVM
 thousand_sample <- email_data[sample(nrow(email_data), 1000),]
 # Adding packages so the SVM can actually be created
@@ -22,9 +22,12 @@ require(caret)
 #kernal based machine learning lab; adds methods for classification; deeper than caret package
 require(kernlab)
 require(doMC)
+# Supress masking messages
+library(ggplot2)
+library(kernlab, warn.conflicts = FALSE)
 # splliting test and train data; which rows will be for training and which rows will be for testing; 
 # keeps zero and one in both training and testing to guarantee homogenous training
-train <- createDataPartition(thousand_sample$y, p=.8, list = FALSE, times = 1)
+train <- createDataPartition(thousand_sample$y, p =.8, list = FALSE, times = 1)
 # finally (actual split)
 d_train <- thousand_sample[ train, ]
 d_test <- thousand_sample[-train, ]
@@ -53,13 +56,13 @@ if(FALSE){ "FROM ARTICLE THAT IS TEACHING ME HOW TO BUILD THIS: EASIER EXPLANATI
   "
 }
 sigDist <- sigest(y ~ ., data = d_train, frac = 1)
-svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7))
+svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7), row.names = NULL)
 
 # Actual Training  = > article has good description, but I will add an even more lay description soon
 if(FALSE){
   "lay description"
 }
-x <- train(y ~., data = d_train, method = "svmRadial", preProc = c("center","scale"),
+x <- train(y ~. , data = d_train, method = "svmRadial", preProc = c("center","scale"),
            tuneGrid = svmTuneGrid, trControl =
            trainControl(method = "repeatedcv, repeats = 5", 
                         classProbs = TRUE))
