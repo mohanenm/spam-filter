@@ -10916,3 +10916,16 @@ remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3) 
 To https://github.com/mohanenm/spam-filter
    76319d2..871c204  master -> master
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit -m "prcra[K[K[Kocran[Kstinating [K my phil midterm [K"
+[master 6986f6c] procrastinating my phil midterm
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git p[Kpush 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 757 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+gi  To https://github.com/mohanenm/spam-filter
+   871c204..6986f6c  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ gt [K[Kit add . 
