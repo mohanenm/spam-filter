@@ -27,7 +27,9 @@ names_att <-read.csv("names.csv", header=FALSE, sep=";")
 if(FALSE){
   current_emails <- read.csv('my_emails', header = FALSE, sep=';')
   names(current_emails) < sapply((1:nrow(names_att)), function(i) toString(names_att[i,1]))
-   # ln --> 104
+  current_emails <- as.factor(rep(current_emails$y))
+  # Not going to reduce sample size
+  # ln --> 104
   
 }
 
@@ -88,6 +90,7 @@ message <- ("If this prints, everything it good to go :>)")
 print(noquote(message)) # self explanatory
 matrix_message <- ("Loading now........")
 print(noquote(matrix_message)) # self exaplanatory
+
 sigDist <- sigest(y ~ ., data = d_train, frac = 1)
 svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7), row.names = NULL)
 

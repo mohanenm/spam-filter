@@ -1,7 +1,15 @@
 # SPAM -- FILTER
 
+# resources used ====>
 
-# Supress masking messages
+# http://thinktostart.com/build-a-spam-filter-with-r/ < ---- MAIN
+# https://archive.ics.uci.edu/ml/machine-learning-databases/spambase/
+# http://r.789695.n4.nabble.com/R-how-to-suppress-a-quot-loading-required-package-quot-message-td815095.html
+# https://en.wikipedia.org/wiki/Support_vector_machine
+# https://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
+# https://stackoverflow.com/questions/46200207/caret-error-for-traincontrol-method-repeatedcv
+# https://stackoverflow.com/questions/24131798/using-caret-package-but-getting-error-in-librarye1071
+# https://stackoverflow.com/questions/5215481/remove-quotes-from-a-character-vector-in-r 
 library(ggplot2)
 library(kernlab, warn.conflicts = FALSE)
 suppressWarnings(suppressMessages(library(kernlab)))
@@ -15,6 +23,15 @@ email_data <- read.csv("data.csv", header=FALSE,sep=";")
 
 # read in attribute names so that support vector model can actually work
 names_att <-read.csv("names.csv", header=FALSE, sep=";")
+
+if(FALSE){
+  current_emails <- read.csv('my_emails', header = FALSE, sep=';')
+  names(current_emails) < sapply((1:nrow(names_att)), function(i) toString(names_att[i,1]))
+  current_emails <- as.factor(rep(current_emails$y))
+  # Not going to reduce sample size
+  # ln --> 104
+  
+}
 
 # print(email_data)
 # print(name_data)
@@ -73,6 +90,7 @@ message <- ("If this prints, everything it good to go :>)")
 print(noquote(message)) # self explanatory
 matrix_message <- ("Loading now........")
 print(noquote(matrix_message)) # self exaplanatory
+
 sigDist <- sigest(y ~ ., data = d_train, frac = 1)
 svmTuneGrid <- data.frame(.sigma = sigDist[1], .C = 2^(-2:7), row.names = NULL)
 
@@ -86,7 +104,12 @@ x <- train(y ~. , data = d_train, method = "svmRadial", preProc = c("center","sc
 
 pred <- predict(x, d_test[,1:57])
 acc <- confusionMatrix(pred, d_test$y)
+#TESTS = >SPAM(0), NON-SPAM(1)
+#actual_emails <-confusionMatric(pred, current_emails$y)
 print(acc)
+
+
+test <- 
 
 # interpreting this result and how to apply it == > "What does this all mean?"
 if(FALSE){
