@@ -10903,3 +10903,16 @@ remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7) 
 To https://github.com/mohanenm/spam-filter
    ec298ea..76319d2  master -> master
 ]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add  [K. 
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git commit -m '[K"f"
+[master 871c204] f
+ 2 files changed, 16 insertions(+), 3 deletions(-)
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git push 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 1020 bytes | 0 bytes/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  33% (1/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/mohanenm/spam-filter
+   76319d2..871c204  master -> master
+]0;~/Desktop/Desktop/spam-filterxxxxxx:spam-filter ethan$ git add . 
