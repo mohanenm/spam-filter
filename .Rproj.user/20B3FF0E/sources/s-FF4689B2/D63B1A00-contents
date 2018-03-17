@@ -24,6 +24,12 @@ email_data <- read.csv("data.csv", header=FALSE,sep=";")
 # read in attribute names so that support vector model can actually work
 names_att <-read.csv("names.csv", header=FALSE, sep=";")
 
+if(FALSE){
+  current_emails <- read.csv("my_emails", header = FALSE, sep=";")
+  names(current_emails) < sapply((1:nrow(names_att)), function(i) toString(names_att[i,1]))
+   # this, of course, will not remain here, you would put it after the actual model has been trained
+}
+
 # print(email_data)
 # print(name_data)
 # Actually applying names to our read in data
